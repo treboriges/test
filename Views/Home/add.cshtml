@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../dashboard">Dashboard</a>    <a href="../logout">Logout</a>
+    <h4>Add a belt </h4>
+    <form action="../adding/@ViewBag.belt.beltid" method="post">
+        <strong>Color</strong>  @ViewBag.belt.color <br>
+        <strong>Belt Description</strong> @ViewBag.belt.description <br>
+
+        <strong>Date</strong> <input type="date" name="date"> <br>
+        <strong>User Desription</strong> <input type="text" name="description" placeholder="What did you do to get it?"> <br>
+        <input type="submit" name="Submit" value="Add">
+    </form>
+
+</body>
+</html>
